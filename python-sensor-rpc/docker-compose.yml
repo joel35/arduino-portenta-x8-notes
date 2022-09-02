@@ -1,0 +1,11 @@
+services:
+  python-sensor-rpc:
+    #image: hub.foundries.io/arduino/python-sensor-rpc:latest
+    image: python-sensor-rpc:latest
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - /var/run/secrets:/app/config/
+    extra_hosts:
+      - "m4-proxy:host-gateway"
