@@ -135,6 +135,17 @@ This uses the m4-proxy service to send/receive messages. To check the service st
     Sep 01 16:06:41 portenta-x8-1421c209dab6fad9 systemd[1]: Started M4 builtin led forwarder.
     Sep 01 16:06:41 portenta-x8-1421c209dab6fad9 m4_proxy[1107]: charDevListener
 
+.. note::
+
+    If you want to use this (or any other Python script using m4-proxy) with
+    Jupyter Notebook, as-per `this GitHub issue <https://github.com/msgpack-rpc/msgpack-rpc-python/issues/24>`_,
+    you'll need to use a `forked version <https://github.com/xaedes/msgpack-rpc-python/tree/with_tornado_453>`_
+    of the `msgpack-rpc-python <https://pypi.org/project/msgpack-rpc-python/>`_ library.
+
+    You might also possibly be able to use `rpc-msgpack <https://pypi.org/project/rpc-msgpack/>`_
+    but haven't tested this yet.
+
+
 Send data from Arduino side to Linux side
 =========================================
 
