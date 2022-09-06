@@ -140,6 +140,12 @@ Send data from Arduino side to Linux side
 
 Official tutorial: https://docs.arduino.cc/tutorials/portenta-x8/python-arduino-data-exchange
 
+.. note::
+
+    This connects to the m4-proxy service running on the x8 via an RPC library.
+    More info about this can be found in
+    `this Jupyter Notebook <https://github.com/arduino/portenta-containers/blob/release/jupyter-lab-x8/notebooks/SerialRPC.ipynb>`_.
+
 Blink application files
 -----------------------
 
