@@ -12,6 +12,7 @@ Portenta x8 notes
 
    get_connected
    update
+   arduino_linux
    run_apps
 
 Indices and tables
